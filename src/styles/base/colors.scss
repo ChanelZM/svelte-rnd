@@ -1,0 +1,30 @@
+@function to-rgb($color) {
+  @return red($color) + " " + green($color) + " " + blue($color);
+}
+
+$colors: (
+  "hyper-black": #1c1a1f,
+  "charcoal-grey": #515053,
+  "darker-grey": #9c9b9d,
+  "mid-grey": #d7d7d7,
+  "light-grey": #eee,
+  "brainstem-grey": #b5b4b5,
+  "graphite-gray": #373539,
+  "white": #fff,
+  "hyper-purple": #9a4eff,
+  "hyper-purple-light": #cc80ff,
+  "confirmed": #23a0e7,
+  "error": #f91f68,
+  "warning": #f5ab3d,
+  "success": #2ce174,
+  "shine": #e9f655,
+  "white-shadow": #fffc,
+  "black-shadow": #000c,
+);
+
+:root {
+  @each $key, $color in $colors {
+    --c-#{$key}: #{$color};
+    --c-#{$key}-rgb: #{to-rgb($color)};
+  }
+}

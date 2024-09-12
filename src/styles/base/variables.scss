@@ -1,0 +1,58 @@
+:root {
+  // Font families
+  --ff-suisse-light: "Suisse Intl Light", sans-serif;
+  --ff-suisse: "Suisse Intl", sans-serif;
+  --ff-suisse-medium: "Suisse Intl Medium", sans-serif;
+  --ff-suisse-book: "Suisse Intl Book", sans-serif;
+  --ff-grotesk: "FK Grotesk Mono", sans-serif;
+  --ff-grotesk-medium: "FK Grotesk Mono Medium", sans-serif;
+
+  // Font weights
+  --weight-light: 300;
+  --weight-regular: 400;
+  --weight-medium: 450;
+  --weight-semibold: 500;
+  --weight-bold: 600;
+
+  // Font sizes
+  --font-xx-small: 0.75rem; /* 12px */
+  --font-x-small: 0.875rem; /* 14px */
+  --font-small: 1rem; /* 16px */
+  --font-normal: 1.25rem; /* 20px */
+  --font-large: 1.125rem; /* 18px */
+  --font-x-large: 1.5rem; /* 24px */
+  --font-xx-large: 2rem; /* 32px */
+  --font-xxx-large: 3rem; /* 48px */
+
+  // Radii
+  --radius-small: 0.4rem;
+  --radius-medium: 0.8rem;
+  --radius-large: 1.2rem;
+  --radius-super: 2rem;
+  --radius-round: 100vw;
+
+  // Box shadows
+  --shadow-soft: 0 0.2rem 1.6rem rgb(48 55 115 / 15%);
+  --shadow-medium: 0 0.2rem 1.2rem rgb(36 48 76 / 8%);
+  --shadow-hard: 0 0.1rem 0.4rem 0.1rem rgb(0 0 0 / 15%);
+
+  // Z indices
+  --z-negative: -10;
+  --z-zero: 0;
+  --z-header: 10;
+  --z-nav: 20;
+  --z-overlay: 30;
+  --z-popover: 40;
+  --z-spinner: 50;
+  --z-dialog: 60;
+
+  // Spacing
+  --spacing-tiny: 0.25rem; /* 4px */
+  --spacing-small: 0.5rem; /* 8px */
+  --spacing-medium: 1rem; /* 16px */
+  --spacing-large: 1.5rem; /* 24px */
+  --spacing-x-large: 2rem; /* 32px */
+  --spacing-xx-large: 2.5rem; /* 40px */
+  --spacing-xxx-large: 4rem; /* 64px */
+  --gutter: 2rem; /* 32px */
+}

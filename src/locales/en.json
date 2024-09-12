@@ -1,0 +1,15 @@
+{
+  "text": "This is an example text",
+  "title": "My todos",
+  "addTodo": "Add todo",
+  "edit": "Edit",
+  "delete": "Delete",
+  "save": "Save",
+  "description": "Description",
+  "dueDate": "Due date",
+  "selectProject": "Select project",
+  "cancel": "Cancel",
+  "add": "Add",
+  "update": "Update",
+  "nothingFound": "No todos found. Add a todo in the top right corner!"
+}

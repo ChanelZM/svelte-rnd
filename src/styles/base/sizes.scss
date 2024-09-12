@@ -1,0 +1,31 @@
+$breakpoint-small-phone: 320px;
+$breakpoint-phone: 470px;
+$breakpoint-small-tablet: 768px;
+$breakpoint-tablet: 920px;
+$breakpoint-tablet-landscape: 1024px;
+$breakpoint-laptop: 1200px;
+$breakpoint-laptop-big: 1440px;
+
+@mixin responsive-range($from, $to: null) {
+    @if $to {
+        @media only screen and (min-width: #{$from}) and (max-width: #{ $to - 1px }) {
+            @content;
+        }
+    } @else {
+        @media only screen and (min-width: #{$from}) {
+            @content;
+        }
+    }
+}
+
+@mixin responsive-min($breakpoint) {
+    @media only screen and (min-width: #{$breakpoint}) {
+        @content;
+    }
+}
+
+@mixin responsive-max($breakpoint) {
+    @media only screen and (max-width: #{ $breakpoint - 1px }) {
+        @content;
+    }
+}

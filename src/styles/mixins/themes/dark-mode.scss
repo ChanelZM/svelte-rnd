@@ -1,0 +1,12 @@
+@mixin dark-mode {
+    --tc-background-primary: var(--c-hyper-black);
+    --tc-text-primary: var(--c-white);
+    --tc-text-secondary: var(--c-darker-grey);
+    --tc-text-tertiary: var(--c-charcoal-grey);
+    --tc-text-quaternary: var(--c-mid-grey);
+    --tc-text-quinary: var(--c-charcoal-grey);
+    --tc-modal-background: var(--c-graphite-gray);
+    --tc-input-border: var(--c-darker-grey);
+    --tc-decoration: var(--c-graphite-gray);
+    --tc-tag: var(--c-graphite-gray);
+}

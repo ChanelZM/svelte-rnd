@@ -1,0 +1,14 @@
+{
+  "text": "To jest przykładowy tekst",
+  "title": "Moje zadania",
+  "addTodo": "Dodaj zadanie",
+  "edit": "Edytuj",
+  "delete": "Usuń",
+  "description": "Opis",
+  "dueDate": "Termin",
+  "selectProject": "Wybierz projekt",
+  "cancel": "Anuluj",
+  "add": "Dodaj",
+  "update": "Aktualizuj",
+  "nothingFound": "Nie znaleziono zadań. Dodaj zadanie w prawym górnym rogu!"
+}

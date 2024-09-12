@@ -1,0 +1,12 @@
+@mixin light-mode {
+    --tc-background-primary: var(--c-white);
+    --tc-text-primary: var(--c-hyper-black);
+    --tc-text-secondary: var(--c-charcoal-grey);
+    --tc-text-tertiary: var(--c-darker-grey);
+    --tc-text-quaternary: var(--c-mid-grey);
+    --tc-text-quinary: var(--c-light-grey);
+    --tc-modal-background: var(--c-white);
+    --tc-input-border: var(--c-darker-grey);
+    --tc-decoration: var(--c-mid-grey);
+    --tc-tag: var(--c-light-grey);
+}

@@ -1,0 +1,63 @@
+@import "$mixins/themes/dark-mode";
+@import "$mixins/themes/light-mode";
+@import "$mixins/themes/custom";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  min-height: 100%;
+
+  font-family: var(--ff-suisse);
+  font-size: var(--f-normal);
+
+  background-color: var(--tc-background-primary);
+
+  &:has(dialog[open]) {
+    overflow: hidden;
+  }
+
+  @supports (padding-top: env(safe-area-inset-top)) {
+    min-height: calc(100% + var(--safe-area-inset-top));
+  }
+}
+
+.light-theme {
+  @include light-mode;
+}
+
+.dark-theme {
+  @include dark-mode;
+}
+
+.custom-theme {
+  @include custom;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+
+  font-size: var(--f-normal);
+  color: var(--tc-text-primary);
+
+  background-color: transparent;
+  border: none;
+}
+
+a {
+  color: var(--tc-text-primary);
+}
+
+strong {
+  font-weight: var(--weight-bold);
+}
+
+small {
+  font-size: var(--f-small);
+  font-weight: var(--weight-light);
+}

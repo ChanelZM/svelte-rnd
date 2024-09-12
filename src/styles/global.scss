@@ -1,0 +1,14 @@
+// css packages
+@import "modern-normalize/modern-normalize.css";
+
+// mixins
+@import "$mixins/themes/dark-mode";
+@import "$mixins/themes/light-mode";
+@import "$mixins/themes/custom";
+
+// base styles
+@import "$src/styles/base/sizes";
+@import "$src/styles/base/variables";
+@import "$src/styles/base/colors";
+@import "$src/styles/base/fonts";
+@import "$src/styles/base/defaults";

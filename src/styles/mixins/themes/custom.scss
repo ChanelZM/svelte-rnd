@@ -1,0 +1,12 @@
+@mixin custom {
+    --tc-background-primary: var(--c-hyper-purple);
+    --tc-text-primary: var(--c-white);
+    --tc-text-secondary: var(--c-light-grey);
+    --tc-text-tertiary: var(--c-mid-grey);
+    --tc-text-quaternary: var(--c-mid-grey);
+    --tc-text-quinary: var(--c-charcoal-grey);
+    --tc-modal-background: var(--c-hyper-purple-light);
+    --tc-input-border: var(--c-brainstem-grey);
+    --tc-decoration: var(--c-hyper-purple-light);
+    --tc-tag: var(--c-hyper-purple-light);
+}

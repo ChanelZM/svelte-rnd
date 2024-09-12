@@ -1,0 +1,15 @@
+{
+  "text": "Dit is een voorbeeldtekst",
+  "title": "Mijn todos",
+  "addTodo": "Todo toevoegen",
+  "edit": "Bewerken",
+  "delete": "Verwijderen",
+  "save": "Opslaan",
+  "description": "Omschrijving",
+  "dueDate": "Vervaldatum",
+  "selectProject": "Selecteer project",
+  "cancel": "Annuleren",
+  "add": "Toevoegen",
+  "update": "Bijwerken",
+  "nothingFound": "Geen todos gevonden. Voeg een todo toe rechtsboven!"
+}

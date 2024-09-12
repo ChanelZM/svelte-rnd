@@ -1,0 +1,47 @@
+# Node.js
+# Build a general Node.js project with npm.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
+
+trigger:
+  - main
+
+pool:
+  vmImage: "ubuntu-latest"
+
+steps:
+  - task: UseNode@1
+    inputs:
+      version: "20.x"
+    displayName: "Install Node.js"
+  - script: |
+      npm audit --omit=dev
+    displayName: "npm audit for production packages"
+  - script: |
+      npx lockfile-lint --path package-lock.json --allowed-hosts registry.npmjs.org
+    displayName: "npx lockfile-lint"
+  - script: |
+      npm ci
+    displayName: "Install npm packages"
+  - script: |
+      npm run prettier
+    displayName: "Prettier check"
+  - script: |
+      npm run lint:css
+    displayName: "Stylelint check"
+  - script: |
+      npm run lint:js
+    displayName: "ESLint check"
+  - script: |
+      npm run test:coverage -- --reporter=default --reporter=junit --outputFile=reports/junit.xml
+    displayName: "Unit test with code coverage check"
+  - task: PublishTestResults@2
+    inputs:
+      testResultsFormat: "JUnit"
+      testResultsFiles: "$(System.DefaultWorkingDirectory)/reports/junit.xml"
+    displayName: "Publish unit test result"
+  - task: PublishCodeCoverageResults@2
+    inputs:
+      summaryFileLocation: "$(System.DefaultWorkingDirectory)/coverage/cobertura-coverage.xml"
+      failIfCoverageEmpty: true
+    displayName: "Publish code coverage result"

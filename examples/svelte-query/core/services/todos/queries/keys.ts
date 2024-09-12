@@ -1,0 +1,7 @@
+export const TODOS_QUERY_KEYS = {
+  TODOS_ALL: "TODOS_ALL",
+};
+
+export const PROJECTS_QUERY_KEYS = {
+  PROJECTS_ALL: "PROJECTS_ALL",
+};
