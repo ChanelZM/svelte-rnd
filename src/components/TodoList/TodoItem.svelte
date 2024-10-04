@@ -28,7 +28,7 @@
 <Card>
   <article class="wrapper" class:done>
     <div class="header">
-      <Text variant="h2" styling="section" className="description">
+      <Text variant="h2" styling="section" class="description">
         {description}
       </Text>
       <div class="checkbox-column">
