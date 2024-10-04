@@ -17,7 +17,6 @@
     | "copy-light" = "body";
 
   export let center: boolean = false;
-  export let className: string = "";
 
   let Element: keyof HTMLElementTagNameMap = variant;
 
@@ -28,7 +27,7 @@
 
 <svelte:element
   this={Element}
-  class="{variant} {styling} {center && 'center'} {className}"
+  class="{variant} {styling} {center && 'center'} {$$restProps.class || ''}"
 >
   <slot />
 </svelte:element>
