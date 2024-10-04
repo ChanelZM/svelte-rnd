@@ -7,15 +7,14 @@
   export let content: string;
 
   const activeDetail: Writable<number | null> = getContext(detailKey);
-  $: console.log(activeDetail);
+
+  function onToggle(event: Event) {
+    const target = event.target as HTMLDetailsElement;
+    activeDetail.set(target?.open ? id : $activeDetail);
+  }
 </script>
 
-<details
-  class="detail"
-  open={$activeDetail === id}
-  on:toggle={({ target }) =>
-    activeDetail.set(target?.open ? id : $activeDetail)}
->
+<details class="detail" open={$activeDetail === id} on:toggle={onToggle}>
   <summary class="title">{title}</summary>
   <p>{content}</p>
 </details>
