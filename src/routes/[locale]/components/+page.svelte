@@ -1,6 +1,7 @@
 <script>
   import ComponentShowCase from "$components/ComponentShowCase/ComponentShowCase.svelte";
   import Details from "$components/Details/Details.svelte";
+  import InputText from "$components/InputText/InputText.svelte";
   import Text from "$components/Text/Text.svelte";
   import { details } from "$src/constants/dummy-data";
 </script>
@@ -10,6 +11,9 @@
   <div class="content">
     <ComponentShowCase title="Details">
       <Details {details} />
+    </ComponentShowCase>
+    <ComponentShowCase title="Image">
+      <InputText id="Test" name="Test" placeholder="Insert some text" />
     </ComponentShowCase>
   </div>
 </main>
